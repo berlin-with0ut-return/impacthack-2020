@@ -1,0 +1,9 @@
+The Room Where It Happens: The Diplomatic Presence of the US
+R SHINY WEBAPP
+- where, when, and why diplomacy happens
+- topics addressed by ​bilateral​ and ​multilateral​ engagement
+- interactive world map​
+- work around the clock, 24/7
+
+- map with connections (dark and glowy)
+- show mission at center: what the embassies r doing (bilateral, multilateral)
