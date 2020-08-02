@@ -2,13 +2,14 @@ library(shiny)
 library(leaflet)
 source("utils.R")
 
-ui <- bootstrapPage(
+ui <- bootstrapPage(title="US Diplomacy Visualizer",
     tags$head(
         tags$style(HTML(".help-block {color: #FFFFFF !important;
                                       font-size: 20px;}")), 
-        tags$style(type = "text/css", "html, body {width:120%;height:120%}"), 
+        tags$style(type = "text/css", "html, body {width:150%;height:150%}"), 
         tags$style(HTML(
-            "label {color: #FFFFFF;}"
+            "label {color: #FFFFFF;}",
+        tags$title("US Diplomacy Visualizer")
         )),
         tags$style(
             "#errorMsg {
@@ -72,7 +73,8 @@ server <- function(input, output, session) {
     })
     
     output$map <- renderLeaflet({
-        leaflet() %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels)
+        leaflet() %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
+            setView(90, -50,  zoom = 3)
     })
     
     observe({
