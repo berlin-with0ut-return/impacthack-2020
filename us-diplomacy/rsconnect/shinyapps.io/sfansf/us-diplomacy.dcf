@@ -1,0 +1,13 @@
+name: us-diplomacy
+title: us-diplomacy
+username:
+account: sfansf
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2633366
+bundleId: 3463239
+url: https://sfansf.shinyapps.io/us-diplomacy/
+when: 1596299779.63047
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Plan.txt

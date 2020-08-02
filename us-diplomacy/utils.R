@@ -1,4 +1,3 @@
-setwd("/Users/Sherry/Projects/ImpactHack/")
 library(leaflet)
 library(maps)
 library(rlist)
@@ -6,7 +5,7 @@ library(rlist)
 # leaflet(options = leafletOptions(minZoom = 0, maxZoom = 18))
 # mapWorld = map("world", fill = TRUE, plot = FALSE)
 # leaflet(data = mapWorld) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels)
-embassies <- read.csv("full-embassies.csv")
+embassies <- read.csv("./full-embassies.csv")
 # leaflet(data = embassies) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
 #   addCircleMarkers(~Longitude, ~Latitude, popup = ~as.character(Mission), 
 #                    label = ~as.character(Name), radius = 5, color = "cyan", 
